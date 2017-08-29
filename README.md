@@ -19,6 +19,7 @@ console.log('hello world!');
 ```
 
 ## Update Notes
+2017-08-28 20:59 - Update Src\api-strategy.coffee passport-google-oauth20<br>
 2017-08-28 20:42 - Update readme to show dates and Notes<br>
 2017-08-28 20:20 - edit passport to refer to passport-google-oauth2<br>
 2017-08-28 20:15 - created project from octoblu\generator-endo<br>

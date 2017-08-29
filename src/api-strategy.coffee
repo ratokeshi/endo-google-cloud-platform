@@ -1,5 +1,5 @@
 _ = require 'lodash'
-PassportGoogleCloudPlatform = require 'passport-google-oauth2'
+PassportGoogleCloudPlatform = require 'passport-google-oauth20'
 
 class GoogleCloudPlatformStrategy extends PassportGoogleCloudPlatform
   constructor: (env) ->
