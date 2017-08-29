@@ -13,10 +13,17 @@ $ npm install endo-google-cloud-platform
 ```
 
 ### Usage
-
+Not tested for usage as of 08/28/2017
 ```javascript
 console.log('hello world!');
 ```
+
+## Update Notes
+2017-08-28 20:42 - Update readme to show dates and Notes
+2017-08-28 20:20 - edit passport to refer to passport-google-oauth2
+2017-08-28 20:15 - created project from octoblu\generator-endo
+2017-08-28 20:01 - created readme.md
+
 
 ## License
 
