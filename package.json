@@ -2,8 +2,7 @@
   "name": "endo-google-cloud-platform",
   "version": "1.0.0",
   "description": "Put some description here",
-  "keywords": [
-  ],
+  "keywords": [],
   "homepage": "https://github.com/ratokeshi/google-cloud-platform",
   "bugs": "https://github.com/ratokeshi/google-cloud-platform/issues",
   "author": {
@@ -39,10 +38,10 @@
     "debug": "^2.2.0",
     "endo-core": "^14.3.0",
     "errorhandler": "^1.4.2",
+    "express": "^4.13.3",
     "express-meshblu-auth": "^5.0.0",
     "express-meshblu-healthcheck": "^1.0.1",
     "express-send-error": "^1.1.0",
-    "express": "^4.13.3",
     "fs-cson": "^0.3.2",
     "jsonschema": "^1.1.0",
     "lodash": "^4.11.1",
@@ -50,10 +49,10 @@
     "meshblu-encryption": "^1.0.3",
     "morgan": "^1.6.1",
     "passport": "^0.3.2",
+    "passport-google-oauth2": "^0.1.6",
     "passport-octoblu": "^2.0.1"
   },
-  "peerDependencies": {
-  },
+  "peerDependencies": {},
   "engines": {
     "node": ">=0.8.0",
     "npm": ">=1.2.10"
