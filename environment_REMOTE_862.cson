@@ -1,0 +1,11 @@
+PORT: 8080
+ENDO_GOOGLE_CLOUD_PLATFORM_SERVICE_URL: "https://endogooglecloudplatform.localtunnel.me"
+APP_OCTOBLU_HOST: "https://app.octoblu.com/"
+ENDO_GOOGLE_CLOUD_PLATFORM_MANAGER_URL: "https://endo-manager.octoblu.com"
+MESHBLU_PRIVATE_KEY: "U"
+MESHBLU_UUID: ""
+MESHBLU_TOKEN: ""
+ENDO_GOOGLE_CLOUD_PLATFORM_GOOGLE_CLOUD_PLATFORM_CLIENT_ID: "blahblahblah.apps.googleusercontent.com"
+ENDO_GOOGLE_CLOUD_PLATFORM_GOOGLE_CLOUD_PLATFORM_CLIENT_SECRET: "blahblahblah"
+ENDO_GOOGLE_CLOUD_PLATFORM_GOOGLE_CLOUD_PLATFORM_CALLBACK_URL: "https://endogcpratu.localtunnel.me:8000/auth/api/callback"
+ENDO_OCTOBLU_OAUTH_URL: "https://endogcpratu.localtunnel.me:8000/auth/octoblu/callback"
