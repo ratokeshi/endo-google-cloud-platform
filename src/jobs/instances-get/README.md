@@ -39,6 +39,7 @@ node command.js
         *  4th line 'x-group-name': will change the grouping for actions in the Octoblu object
         *  This file requires a list of types
             *  in the properties section, the field1, field2 etc. should be changed to identify the fields in the Octoblu flow.
+            *  In the example below, the action name is the title field.  In the Octoblu flow the form fields are labeled field1, field2, field3, and field4etc.  The options under properties is what is listed in the Octoblu interface.
          ```javascript
             title: 'Name of the action as it appears in the Octoblu Flow'
             type: 'object'
