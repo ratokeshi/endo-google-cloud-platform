@@ -13,12 +13,17 @@ $ npm install endo-google-cloud-platform
 ```
 
 ### Usage
-Not tested for usage as of 08/28/2017
+modify environment.cson to include port example: for port 8080 use:
 ```javascript
-console.log('hello world!');
+PORT: 8080
+```
+From root of endo run endo-doctor which will run this at the end or run the following without endo-doctor
+```javascript
+node command.js
 ```
 
 ## Update Notes
+2017-09-03 13:13 - Created doc for updating adding jobs added job for instance-get
 2017-08-29 19:36 - successful run of the endo-doctor
 2017-08-28 20:59 - Update Src\api-strategy.coffee passport-google-oauth20<br>
 2017-08-28 20:42 - Update readme to show dates and Notes<br>
