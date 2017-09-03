@@ -1,3 +1,15 @@
+###
+need to create RESTapi call
+    GET /compute/v1/projects/tokeshi-net-izen/zones/europe-west1-d/instances HTTP/1.1
+    Host: www.googleapis.com
+    Authorization: Bearer -token-
+    Cache-Control: no-cache
+    Postman-Token: -token-
+
+format is GET https://www.googleapis.com/compute/v1/projects/-name-of-GCP-project-/zones/-name-of-GCP-zone/instances
+###
+
+
 Github = require 'github'
 http   = require 'http'
 _      = require 'lodash'
