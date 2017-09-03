@@ -32,7 +32,12 @@ node command.js
           'data.projectname'
           ]
     ```
-    
+    *  index.coffee - no changes - this points to the other files in the job folder
+    *  job.coffee - this is where the real work of the job happens
+    *  message.cson - change this to see the job in the octoblu flow
+    *  response.cson
+        *  no immediate changes needed to this file
+        *  you will add items here configure responses after the job.coffee runs
 
 ## Update Notes
 2017-09-2039 11:13 - how to modify a copied job
