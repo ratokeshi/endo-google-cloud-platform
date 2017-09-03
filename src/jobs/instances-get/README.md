@@ -27,11 +27,11 @@ node command.js
 *  List of files to change in job
     *  action.coffee - no immediate changes needed to this file
     *  form.cson - list of variables needed from the user
-    ```javascript
-       angular: [
-          'data.projectname'
-          ]
-    ```
+       ```javascript
+          angular: [
+             'data.projectname'
+             ]
+       ```
     *  index.coffee - no changes - this points to the other files in the job folder
     *  job.coffee - Change this. This file is where the real work of the job happens.
     *  message.cson - Change this to see the job in the octoblu flow
@@ -39,24 +39,24 @@ node command.js
         *  4th line 'x-group-name': will change the grouping for actions in the Octoblu object
         *  This file requires a list of types
       ```javascript
-      title: 'Name of the action as it appears in the Octoblu Flow'
-      type: 'object'
-      properties:
-        data:
-          type: 'object'
-          properties:
-            field1:
-              type: 'string'
-            field2:
-              type: 'string'
-            field3:
-              type: 'string'
-            field4etc:
-              type: 'string'
-          required: [
-            'operation'
-          ]
-      ```
+         title: 'Name of the action as it appears in the Octoblu Flow'
+         type: 'object'
+         properties:
+           data:
+             type: 'object'
+             properties:
+               field1:
+                 type: 'string'
+               field2:
+                 type: 'string'
+               field3:
+                 type: 'string'
+               field4etc:
+                 type: 'string'
+             required: [
+               'operation'
+             ]
+         ```
     *  response.cson
         *  no immediate changes needed to this file
         *  you will add items here configure responses after the job.coffee runs
