@@ -1,4 +1,4 @@
-# endo-google-cloud-platform: New copied Job folder
+# endo or meshblu connector job creation: New copied Job folder
 
 [![Dependency status](http://img.shields.io/david/ratokeshi/endo-google-cloud-platform?style=flat)](https://david-dm.org/ratokeshi/endo-google-cloud-platform)
 [![devDependency Status](http://img.shields.io/david/dev/ratokeshi/endo-google-cloud-platform.svg?style=flat)](https://david-dm.org/ratokeshi/endo-google-cloud-platform#info=devDependencies)
@@ -26,10 +26,13 @@ node command.js
 *  Folder name - alphabetical listing of folders results in order placed in Octoblu flow interface
 *  List of files to change in job
     *  action.coffee - no immediate changes needed to this file
-    *  form.cson - list of variables needed from the user
+    *  form.cson - list of variables needed from the user.  The four items below are referenced as properties in the message.cson  
        ```javascript
           angular: [
-             'data.projectname'
+             'data.field1'
+             'data.field2'
+             'data.field3'
+             'data.field4etc'
              ]
        ```
     *  index.coffee - no changes - this points to the other files in the job folder
