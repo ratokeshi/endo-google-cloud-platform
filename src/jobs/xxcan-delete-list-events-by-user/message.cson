@@ -11,5 +11,5 @@
         username:
           type: 'string'
           title: 'Username'
-          description: 'Github username or organization name'
+          description: 'Github username or organization name'  
 }

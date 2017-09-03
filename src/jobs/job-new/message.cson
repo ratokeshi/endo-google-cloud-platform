@@ -11,5 +11,5 @@
         username:
           type: 'string'
           title: 'Username'
-          description: 'job new description'
+          description: 'job new description'  
 }

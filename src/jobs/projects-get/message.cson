@@ -10,5 +10,5 @@
         projectname:
           type: 'string'
           title: 'Project Name'
-          description: 'Google Cloud Platform Project Name'
+          description: 'Google Cloud Platform Project Name'  
 }
