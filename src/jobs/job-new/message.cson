@@ -1,7 +1,7 @@
 {
   type: 'object'
-  title: 'List Events by User'
-  'x-group-name': 'User Events'
+  title: 'message_cson_title'
+  'x-group-name': 'New Group'
   required: ['data']
   properties:
     data:
@@ -11,5 +11,5 @@
         username:
           type: 'string'
           title: 'Username'
-          description: 'Github username or organization name'
+          description: 'job new description'
 }

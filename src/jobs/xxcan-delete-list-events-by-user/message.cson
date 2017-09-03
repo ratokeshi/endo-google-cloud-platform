@@ -1,7 +1,7 @@
 {
   type: 'object'
   title: 'List Events by User'
-  'x-group-name': 'User Events'
+  'x-group-name': 'Can delete? User Events'
   required: ['data']
   properties:
     data:

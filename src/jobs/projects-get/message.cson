@@ -1,0 +1,14 @@
+{
+  type: 'object'
+  title: 'Get Project'
+  'x-group-name': 'Projects'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        projectname:
+          type: 'string'
+          title: 'Project Name'
+          description: 'Google Cloud Platform Project Name'
+}
