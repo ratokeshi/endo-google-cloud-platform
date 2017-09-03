@@ -30,6 +30,7 @@ node command.js
     ```javascript
        angular: [
           'data.projectname'
+          ]
     ```
     
 
