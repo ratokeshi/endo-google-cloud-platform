@@ -25,7 +25,13 @@ node command.js
 *  Must stop and start endo to see changes in Octoblu Flow
 *  Folder name - alphabetical listing of folders results in order placed in Octoblu flow interface
 *  List of files to change in job
-    *  action.coffee  
+    *  action.coffee - no immediate changes needed to this file
+    *  form.cson - list of variables needed from the user
+    ```javascript
+       angular: [
+          'data.projectname'
+    ```
+    
 
 ## Update Notes
 2017-09-2039 11:13 - how to modify a copied job
