@@ -33,8 +33,8 @@ node command.js
           ]
     ```
     *  index.coffee - no changes - this points to the other files in the job folder
-    *  job.coffee - this is where the real work of the job happens
-    *  message.cson - change this to see the job in the octoblu flow
+    *  job.coffee - Change this. This file is where the real work of the job happens.
+    *  message.cson - Change this to see the job in the octoblu flow
     *  response.cson
         *  no immediate changes needed to this file
         *  you will add items here configure responses after the job.coffee runs
