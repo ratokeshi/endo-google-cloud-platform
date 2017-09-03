@@ -25,7 +25,7 @@ node command.js
 1.  Must stop and start endo to see changes in Octoblu Flow
 1.  Folder name - alphabetical listing of folders results in order placed in Octoblu flow interface
 1.  List of files to change in job  
-..1.  action.coffee
+--1.  action.coffee
 
 ## Update Notes
 2017-09-2039 11:13 - how to modify a copied job
