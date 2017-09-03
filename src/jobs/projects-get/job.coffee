@@ -12,8 +12,9 @@ format is GET https://www.googleapis.com/compute/v1/projects/-name-of-GCP-projec
 Github = require 'github'
 http   = require 'http'
 _      = require 'lodash'
+GcpRequest = require '../../gcp-request.coffee'
 
-class ListEventsByUser
+class GetProject
   constructor: ({@encrypted}) ->
     @github = new Github
       debug: true
@@ -48,4 +49,4 @@ class ListEventsByUser
     error.code = code
     return error
 
-module.exports = ListEventsByUser
+module.exports = GetProject
