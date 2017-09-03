@@ -22,7 +22,7 @@ From root of endo run endo-doctor which will run this at the end or run the foll
 node command.js
 ```
 ### What to change in the Job folder
-*  Must stop and start endo to see changes in Octoblu Flow
+*  Must stop and start endo / meshblu connector to see changes in Octoblu Flow
 *  Folder name - alphabetical listing of folders results in order placed in Octoblu flow interface
 *  List of files to change in job
     *  action.coffee - no immediate changes needed to this file
