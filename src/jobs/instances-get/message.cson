@@ -1,7 +1,7 @@
 {
   type: 'object'
-  title: 'Get Project'
-  'x-group-name': 'Projects'
+  title: 'Get Instance'
+  'x-group-name': 'Instances'
   required: ['data']
   properties:
     data:
