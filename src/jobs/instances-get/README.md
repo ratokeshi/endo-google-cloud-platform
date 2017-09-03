@@ -38,7 +38,7 @@ node command.js
         *  3rd line "title:" will change the name of the action in the Octoblu object
         *  4th line 'x-group-name': will change the grouping for actions in the Octoblu object
         *  This file requires a list of types
-        ```javascript
+```javascript
 title: 'Name of the action as it appears in the Octoblu Flow'
 type: 'object'
 properties:
@@ -56,7 +56,7 @@ properties:
     required: [
       'operation'
     ]
-        ```
+```
     *  response.cson
         *  no immediate changes needed to this file
         *  you will add items here configure responses after the job.coffee runs
