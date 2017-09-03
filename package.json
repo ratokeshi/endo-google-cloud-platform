@@ -43,6 +43,7 @@
     "express-meshblu-healthcheck": "^1.0.1",
     "express-send-error": "^1.1.0",
     "fs-cson": "^0.3.2",
+    "googleapis": "^21.3.0",
     "jsonschema": "^1.1.0",
     "lodash": "^4.11.1",
     "meshblu-config": "^4.0.0",
