@@ -22,10 +22,10 @@ From root of endo run endo-doctor which will run this at the end or run the foll
 node command.js
 ```
 ### What to change in the Job folder
-1.  Must stop and start endo to see changes in Octoblu Flow
-1.  Folder name - alphabetical listing of folders results in order placed in Octoblu flow interface
-1.  List of files to change in job  
-  1.  action.coffee
+*  Must stop and start endo to see changes in Octoblu Flow
+*  Folder name - alphabetical listing of folders results in order placed in Octoblu flow interface
+*  List of files to change in job  
+  *  action.coffee
 
 ## Update Notes
 2017-09-2039 11:13 - how to modify a copied job
