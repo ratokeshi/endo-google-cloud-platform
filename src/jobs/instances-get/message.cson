@@ -1,6 +1,6 @@
 {
   type: 'object'
-  title: 'Get Instance'
+  title: 'Get Instance - fix job.coffee'
   'x-group-name': 'Instances'
   required: ['data']
   properties:

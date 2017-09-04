@@ -12,8 +12,28 @@ format is GET https://www.googleapis.com/compute/v1/projects/-name-of-GCP-projec
 Github = require 'github'
 http   = require 'http'
 _      = require 'lodash'
-GcpRequest = require '../../gcp-request.coffee' #new module from gcp-request.coffee
+https  = require 'https'
+google = require 'googleapis'
+compute = google.compute('v1')
 
+#GcpRequest = require '../../gcp-request.coffee' #new module from gcp-request.coffee
+###
+#from google api
+authorize (authClient) ->
+  request =
+    project: 'tokeshi-net-izen'
+    auth: authClient
+  compute.projects.get request, (err, response) ->
+    if err
+      console.log err
+      return
+
+
+    # TODO: Change code below to process the `response` object:
+    console.log JSON.stringify(response, null, 2)
+    return
+  return
+###
 class GetProject
   constructor: ({@encrypted}) ->
     @github = new Github
@@ -28,6 +48,10 @@ class GetProject
 
   do: ({data}, callback) =>
     return callback @_userError(422, 'data.projectname is required') unless data.projectname?
+
+#raw http get request
+
+
 
     @github.activity.getEventsForUser {user: data.projectname}, (error, results) =>
       return callback error if error?

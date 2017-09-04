@@ -1,6 +1,6 @@
 {
   type: 'object'
-  title: 'Get Project'
+  title: 'Get Project - fix job.coffee'
   'x-group-name': 'Projects'
   required: ['data']
   properties:
@@ -10,5 +10,5 @@
         projectname:
           type: 'string'
           title: 'Project Name'
-          description: 'Google Cloud Platform Project Name'  
+          description: 'Google Cloud Platform Project Name'
 }

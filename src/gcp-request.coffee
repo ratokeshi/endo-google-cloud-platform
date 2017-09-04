@@ -20,7 +20,7 @@ class GcpRequest
     request options, (error, res, body) =>
       callback error, body
 
-###
+
   refreshToken: (refreshToken, clientId, clientSecret, callback) =>
     options = {
       uri: 'https://www.googleapis.com/auth/cloud-platform'
@@ -32,11 +32,11 @@ class GcpRequest
         client_secret: clientSecret
         grant_type: 'refresh_token'
     }
-###
+
     request options, (error, res, body) =>
       return callback error, body
 
-###  podssibly drop download file
+#  podssibly drop download file
   downloadFile: (method, file_id, qs, body, callback) =>
     options = {
       uri: "https://www.googleapis.com/#{file_id}"
@@ -45,7 +45,7 @@ class GcpRequest
       headers:
         Authorization: 'OAuth2 ' + @access_token
     }
-###
+
     options.qs = qs if qs?
     options.body = body if body?
 
