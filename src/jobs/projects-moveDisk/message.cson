@@ -1,0 +1,23 @@
+{
+  type: 'object'
+  title: 'moveDisk: List all shared VPC host projects visible to the user in an organization.- fix job.coffee'
+  'x-group-name': 'Projects'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        projectname:
+          type: 'string'
+          title: 'Project Name'
+          description: 'Google Cloud Platform Project Name'
+        diskname:
+          type: 'string'
+          title: 'Project Name'
+          description: 'Google Cloud Platform Disk to move Name'
+        projecttargetname:
+          type: 'string'
+          title: 'Project Name'
+          description: 'Google Cloud Platform move disk to Project Name'
+
+}
