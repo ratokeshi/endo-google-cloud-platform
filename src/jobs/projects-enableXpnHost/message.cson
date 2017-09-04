@@ -1,6 +1,6 @@
 {
   type: 'object'
-  title: 'getXpnHost: Get the shared VPC host project that this project links to. May be empty if no link exists - fix job.coffee'
+  title: 'enableXpnHost: Enable this project as a shared VPC host project - fix job.coffee'
   'x-group-name': 'Projects'
   required: ['data']
   properties:

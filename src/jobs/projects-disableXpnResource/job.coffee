@@ -1,6 +1,6 @@
 ###
-need to create RESTapi call https://cloud.google.com/compute/docs/reference/latest/projects/getXpnResources
-    GET /compute/v1/projects/tokeshi-net-izen/getXpnResources HTTP/1.1
+need to create RESTapi call https://cloud.google.com/compute/docs/reference/latest/projects/disableXpnResource
+    POST /compute/v1/projects/tokeshi-net-izen/disableXpnResource HTTP/1.1
     Host: www.googleapis.com
     Authorization: Bearer -token-
     Cache-Control: no-cache
