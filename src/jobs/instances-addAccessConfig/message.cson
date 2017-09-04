@@ -1,6 +1,6 @@
 {
   type: 'object'
-  title: addAccessConfig - Adds an access config to an instance's network interface - fix job.coffee'
+  title: 'addAccessConfig - Adds an access config to an instances network interface - fix job.coffee'
   'x-group-name': 'Instances'
   required: ['data']
   properties:
