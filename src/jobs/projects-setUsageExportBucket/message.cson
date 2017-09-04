@@ -1,0 +1,22 @@
+{
+  type: 'object'
+  title: 'setUsageExportBucket: Sets metadata common to all instances within the specified project using the data included in the request.- fix job.coffee'
+  'x-group-name': 'Projects'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        projectname:
+          type: 'string'
+          title: 'Project Name'
+          description: 'Google Cloud Platform Project Name'
+        bucketName:
+          type: 'string'
+          title: 'bucketName'
+          description: 'Google Cloud Platform bucketName'
+        reportNamePrefix:
+          type: 'string'
+          title: 'reportNamePrefix'
+          description: 'Google Cloud Platform reportNamePrefix'
+}
