@@ -1,0 +1,27 @@
+{
+  type: 'object'
+  title: 'setCommonInstanceMetadata: Sets metadata common to all instances within the specified project using the data included in the request.- fix job.coffee'
+  'x-group-name': 'Projects'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        projectname:
+          type: 'string'
+          title: 'Project Name'
+          description: 'Google Cloud Platform Project Name'
+        kind:
+          type: 'string'
+          title: 'Compute metadata'
+          description: 'Google Cloud Platform'
+        fingerprint:
+          type: 'string'
+          title: 'Fingerprint'
+          description: 'Google Cloud Platform move instance to Zone Name'
+        itemname:
+          type: 'string'
+          title: 'Item'
+          description: 'Google Cloud Platform move instance to Zone Name'
+
+}

@@ -1,0 +1,23 @@
+{
+  type: 'object'
+  title: 'moveInstance: Moves an instance and its attached persistent disks from one zone to another.- fix job.coffee'
+  'x-group-name': 'Projects'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        projectname:
+          type: 'string'
+          title: 'Project Name'
+          description: 'Google Cloud Platform Project Name'
+        instancename:
+          type: 'string'
+          title: 'Instance Name'
+          description: 'Google Cloud Platform Disk to move Name'
+        targetzonename:
+          type: 'string'
+          title: 'Zone Name'
+          description: 'Google Cloud Platform move instance to Zone Name'
+
+}
