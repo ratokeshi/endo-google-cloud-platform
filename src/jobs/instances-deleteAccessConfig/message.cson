@@ -1,0 +1,22 @@
+{
+  type: 'object'
+  title: 'deleteAccessConfig - Deletes an access config from an instances network interface.- fix job.coffee'
+  'x-group-name': 'Instances'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        projectname:
+          type: 'string'
+          title: 'Project Name'
+          description: 'Google Cloud Platform Project Name'
+        zonename:
+          type: 'string'
+          title: 'Zone Name'
+          description: 'Google Cloud Platform Zone Name'
+        instancename:
+          type: 'string'
+          title: 'Zone Name'
+          description: 'Google Cloud Platform Instance Name'
+}
