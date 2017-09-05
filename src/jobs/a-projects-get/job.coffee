@@ -9,6 +9,8 @@ format is GET https://www.googleapis.com/compute/v1/projects/-name-of-GCP-projec
 
 https://cloud.google.com/compute/docs/reference/latest/projects/get
 
+20170904 2310 - error on github authentication.
+
 ###
 
 
@@ -16,7 +18,7 @@ Github = require 'github'
 http   = require 'http'
 _      = require 'lodash'
 
-class ListEventsByUser
+class ProjectsGet
   constructor: ({@encrypted}) ->
     @github = new Github
       debug: true
@@ -51,4 +53,4 @@ class ListEventsByUser
     error.code = code
     return error
 
-module.exports = ListEventsByUser
+module.exports = ProjectsGet
