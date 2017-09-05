@@ -1,0 +1,14 @@
+{
+  type: 'object'
+  title: 'aggregatedList - Retrieves an aggregated list of addresses.  - fix job.coffee'
+  'x-group-name': 'Addresses'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        projectname:
+          type: 'string'
+          title: 'Project Name'
+          description: 'Google Cloud Platform Project Name'
+}
