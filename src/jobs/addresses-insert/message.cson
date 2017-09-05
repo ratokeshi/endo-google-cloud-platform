@@ -1,0 +1,14 @@
+{
+  type: 'object'
+  title: 'insert - Creates an address resource in the specified project using the data included in the request. - fix job.coffee'
+  'x-group-name': 'Addresses'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        projectname:
+          type: 'string'
+          title: 'Project Name'
+          description: 'Google Cloud Platform Project Name'
+}
