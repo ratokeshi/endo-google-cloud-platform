@@ -1,0 +1,22 @@
+{
+  type: 'object'
+  title: 'getSerialPortOutput - Returns the specified instance\'s serial port output - Detaches a disk from an instance - fix job.coffee'
+  'x-group-name': 'Instances'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        projectname:
+          type: 'string'
+          title: 'Project Name'
+          description: 'Google Cloud Platform Project Name'
+        zonename:
+          type: 'string'
+          title: 'Zone Name'
+          description: 'Google Cloud Platform Zone Name'
+        instancename:
+          type: 'string'
+          title: 'Zone Name'
+          description: 'Google Cloud Platform Instance Name'
+}

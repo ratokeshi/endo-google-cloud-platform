@@ -1,0 +1,19 @@
+{
+  type: 'object'
+  title: 'list - Retrieves the list of instances contained within the specified zone - fix job.coffee'
+  'x-group-name': 'Instances'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      properties:
+        projectname:
+          type: 'string'
+          title: 'Project Name'
+          description: 'Google Cloud Platform Project Name'
+        zonename:
+          type: 'string'
+          title: 'Zone Name'
+          description: 'Google Cloud Platform Zone Name'
+
+}
