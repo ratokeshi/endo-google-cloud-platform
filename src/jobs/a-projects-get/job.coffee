@@ -24,7 +24,7 @@ class ListEventsByUser
 
 
   do: ({data}, callback) =>
-    return callback @_userError(422, 'data.username is required') unless data.username?
+    return callback @_userError(422, 'data.projectname is required') unless data.projectname?
 
     @github.activity.getEventsForUser {user: data.projectname}, (error, results) =>
       return callback error if error?
