@@ -39,43 +39,31 @@ format is GET https://www.googleapis.com/compute/v1/projects/-name-of-GCP-projec
 ###
 
 
-Github = require 'github'
 http   = require 'http'
 _      = require 'lodash'
+GcpRequest = require '../../gcp-request'
 
-class ListEventsByUser
+class ProjectsGet
   constructor: ({@encrypted}) ->
-    @github = new Github
-      debug: true
-    @github.authenticate type: 'oauth', token: @encrypted.secrets.credentials.secret
-
+    accessToken = @encrypted.secrets.credentials.secret
+    @gcpRequest = new GcpRequest accessToken
 
   do: ({data}, callback) =>
     return callback @_userError(422, 'data.projectname is required') unless data.projectname?
 
-    @github.activity.getEventsForUser {user: data.projectname}, (error, results) =>
+    path = "compute/v1/projects/#{data.projectname}"
+    @gcpRequest.request 'GET', path, null, null, (error, code, results) =>
       return callback error if error?
       return callback null, {
         metadata:
-          code: 200
-          status: http.STATUS_CODES[200]
-        data: @_processResults results
+          code: code
+          status: http.STATUS_CODES[code]
+        data: results
       }
-
-  _processResult: (result) =>
-    {
-      createdAt:   result.created_at
-      description: result.payload.description
-      type:        result.type
-      username:    result.actor.display_login
-    }
-
-  _processResults: (results) =>
-    _.map results, @_processResult
 
   _userError: (code, message) =>
     error = new Error message
     error.code = code
     return error
 
-module.exports = ListEventsByUser
+module.exports = ProjectsGet

@@ -1,5 +1,5 @@
 ###
-need to create RESTapi call https://cloud.google.com/compute/docs/reference/latest/projects/getXpnHost
+need to create RESTapi call https://cloud.google.com/compute/docs/reference/latest/projects/getXpnResources
     GET /compute/v1/projects/tokeshi-net-izen/getXpnHost HTTP/1.1
     Host: www.googleapis.com
     Authorization: Bearer -token-
@@ -21,7 +21,7 @@ class ProjectsGet
   do: ({data}, callback) =>
     return callback @_userError(422, 'data.projectname is required') unless data.projectname?
 
-    path = "compute/v1/projects/#{data.projectname}/disableXpnHost"
+    path = "compute/v1/projects/#{data.projectname}/getXpnResources"
     @gcpRequest.request 'POST', path, null, null, (error, code, results) =>
       return callback error if error?
       return callback null, {

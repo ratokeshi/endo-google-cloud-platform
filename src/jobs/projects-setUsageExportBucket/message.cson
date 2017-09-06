@@ -1,6 +1,6 @@
 {
   type: 'object'
-  title: 'setUsageExportBucket: Sets metadata common to all instances within the specified project using the data included in the request.- fix job.coffee'
+  title: 'setUsageExportBucket: Sets metadata common to all instances within the specified project using the data included in the request.- fix body'
   'x-group-name': 'Projects'
   required: ['data']
   properties:

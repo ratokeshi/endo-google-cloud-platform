@@ -1,6 +1,6 @@
 {
   type: 'object'
-  title: 'moveInstance: Moves an instance and its attached persistent disks from one zone to another.- fix job.coffee'
+  title: 'moveInstance: Moves an instance and its attached persistent disks from one zone to another.- fix body'
   'x-group-name': 'Projects'
   required: ['data']
   properties:
