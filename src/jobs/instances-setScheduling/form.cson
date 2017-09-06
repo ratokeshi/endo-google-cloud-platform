@@ -2,5 +2,6 @@
   angular: [
     'data.projectname'
     'data.zonename'
+    'data.instancename'
   ]
 }
