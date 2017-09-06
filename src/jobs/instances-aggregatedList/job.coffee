@@ -30,7 +30,7 @@ class ProjectsGet
   do: ({data}, callback) =>
     return callback @_userError(422, 'data.projectname is required') unless data.projectname?
 
-    path = "compute/v1/projects/#{data.projectname}"
+    path = "compute/v1/projects/#{data.projectname}/aggregatedinstances"
     @gcpRequest.request 'GET', path, null, null, (error, code, results) =>
       return callback error if error?
       return callback null, {

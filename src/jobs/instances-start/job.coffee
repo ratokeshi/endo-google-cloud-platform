@@ -24,7 +24,6 @@ class InstanceStart
 
   do: ({data}, callback) =>
     return callback @_userError(422, 'data.projectname is required') unless data.projectname?
-#    path = "compute/v1/projects/tokeshi-net-izen/zones/europe-west1-d/instances/instance-3/start"
     path = "compute/v1/projects/#{data.projectname}/zones/#{data.zonename}/instances/#{data.instancename}/start"
     @gcpRequest.request 'POST', path, null, null, (error, code, results) =>
       return callback error if error?

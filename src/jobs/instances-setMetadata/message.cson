@@ -17,7 +17,6 @@
           description: 'Google Cloud Platform Zone Name'
         instancename:
           type: 'string'
-          title: 'Zone Name'
+          title: 'Instance Name'
           description: 'Google Cloud Platform Instance Name'
-
 }

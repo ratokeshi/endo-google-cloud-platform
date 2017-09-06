@@ -1,6 +1,6 @@
 {
   angular: [
     'data.projectname'
-    'data.zonename'
+
   ]
 }
