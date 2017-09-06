@@ -1,6 +1,6 @@
 {
   type: 'object'
-  title: 'start - Starts an instance that was stopped by method. - fix job.coffee'
+  title: 'start - 0243 Starts an instance that was stopped by method. - fix job.coffee'
   'x-group-name': 'Instances'
   required: ['data']
   properties:
@@ -15,9 +15,8 @@
           type: 'string'
           title: 'Zone Name'
           description: 'Google Cloud Platform Zone Name'
-        nameinstance:
+        instancename:
           type: 'string'
           title: 'Instance Name'
           description: 'Google Cloud Platform Instance Name'
-
 }

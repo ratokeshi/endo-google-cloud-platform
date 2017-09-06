@@ -11,5 +11,8 @@
         username:
           type: 'string'
           title: 'Username'
-          description: 'Github username or organization name'  
+          description: 'Github username or organization name'
+        vartwo:
+          title: 'vartwo'
+          description: 'vartwo username or organization name'
 }

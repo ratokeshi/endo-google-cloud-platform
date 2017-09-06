@@ -1,6 +1,6 @@
 {
   type: 'object'
-  title: 'stop - Stops a running instance, shutting it down cleanly,  - fix job.coffee'
+  title: 'stop - 0243a Stops a running instance, shutting it down cleanly,  - fix job.coffee'
   'x-group-name': 'Instances'
   required: ['data']
   properties:
@@ -19,5 +19,4 @@
           type: 'string'
           title: 'Instance Name'
           description: 'Google Cloud Platform Instance Name'
-
 }

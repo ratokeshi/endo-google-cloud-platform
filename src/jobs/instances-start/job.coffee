@@ -17,15 +17,15 @@ http   = require 'http'
 _      = require 'lodash'
 GcpRequest = require '../../gcp-request'
 
-class ProjectsGet
+class InstanceStart
   constructor: ({@encrypted}) ->
     accessToken = @encrypted.secrets.credentials.secret
     @gcpRequest = new GcpRequest accessToken
 
   do: ({data}, callback) =>
     return callback @_userError(422, 'data.projectname is required') unless data.projectname?
-
-    path = "compute/v1/projects/#{data.projectname}/zones/#{data.zonename}/instances/instance-3/reset"
+#    path = "compute/v1/projects/tokeshi-net-izen/zones/europe-west1-d/instances/instance-3/start"
+    path = "compute/v1/projects/#{data.projectname}/zones/#{data.zonename}/instances/#{data.instancename}/start"
     @gcpRequest.request 'POST', path, null, null, (error, code, results) =>
       return callback error if error?
       return callback null, {
@@ -40,4 +40,4 @@ class ProjectsGet
     error.code = code
     return error
 
-module.exports = ProjectsGet
+module.exports = InstanceStart
