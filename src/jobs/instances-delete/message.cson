@@ -1,6 +1,6 @@
 {
   type: 'object'
-  title: 'delete - fix job.coffee'
+  title: 'delete - test'
   'x-group-name': 'Instances'
   required: ['data']
   properties:
@@ -11,10 +11,12 @@
           type: 'string'
           title: 'Project Name'
           description: 'Google Cloud Platform Project Name'
-      properties:
         zonename:
           type: 'string'
           title: 'Zone Name'
           description: 'Google Cloud Platform Zone Name'
-
+        nameinstance:
+          type: 'string'
+          title: 'Instance Name'
+          description: 'Google Cloud Platform Instance Name'
 }

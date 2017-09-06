@@ -11,10 +11,12 @@
           type: 'string'
           title: 'Project Name'
           description: 'Google Cloud Platform Project Name'
-      properties:
         zonename:
           type: 'string'
           title: 'Zone Name'
           description: 'Google Cloud Platform Zone Name'
-
+        instancename:
+          type: 'string'
+          title: 'Zone Name'
+          description: 'Google Cloud Platform Instance Name'
 }
