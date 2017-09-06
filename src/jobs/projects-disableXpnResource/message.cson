@@ -1,6 +1,6 @@
 {
   type: 'object'
-  title: 'disableXpnResource: Get service resources (a.k.a service project) associated with this host project.- fix job.coffee'
+  title: 'disableXpnResource: Disable a serivce resource associated with this host project.- need body'
   'x-group-name': 'Projects'
   required: ['data']
   properties:
