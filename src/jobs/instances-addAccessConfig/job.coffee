@@ -11,9 +11,9 @@ In the request body, supply data with the following structure:
 
 {
   "kind": "compute#accessConfig",
-  "type": string,
-  "name": string,
-  "natIP": string
+  "type": "ONE_TO_ONE_NAT",
+  "name": External NAT,
+  "natIP":
 }
 ###
 
@@ -22,16 +22,21 @@ http   = require 'http'
 _      = require 'lodash'
 GcpRequest = require '../../gcp-request'
 
-class ProjectsGet
+class InstancesaddAccessConfig
   constructor: ({@encrypted}) ->
     accessToken = @encrypted.secrets.credentials.secret
     @gcpRequest = new GcpRequest accessToken
 
   do: ({data}, callback) =>
     return callback @_userError(422, 'data.projectname is required') unless data.projectname?
+    body: JSON.stringify({
+          'kind': 'compute#accessConfig',
+          'type': 'ONE_TO_ONE_NAT',
+          'name': 'External NAT'
 
-    path = "compute/v1/projects/#{data.projectname}"
-    @gcpRequest.request 'GET', path, null, null, (error, code, results) =>
+        })
+    path = "compute/v1/projects/#{data.projectname}/zones/#{data.zonename}/instances/#{data.instancename}/addAccessConfig"
+    @gcpRequest.request 'GET', path, null, body, (error, code, results) =>
       return callback error if error?
       return callback null, {
         metadata:
@@ -45,4 +50,4 @@ class ProjectsGet
     error.code = code
     return error
 
-module.exports = ProjectsGet
+module.exports = InstancesaddAccessConfig
