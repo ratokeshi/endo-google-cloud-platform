@@ -1,6 +1,6 @@
 {
   type: 'object'
-  title: 'delete - test'
+  title: 'delete instance'
   'x-group-name': 'Instances'
   required: ['data']
   properties:
