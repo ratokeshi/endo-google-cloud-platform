@@ -11,7 +11,14 @@ class GoogleCloudPlatformStrategy extends PassportGoogleCloudPlatform
       clientID:     process.env.ENDO_GOOGLE_CLOUD_PLATFORM_GOOGLE_CLOUD_PLATFORM_CLIENT_ID
       clientSecret: process.env.ENDO_GOOGLE_CLOUD_PLATFORM_GOOGLE_CLOUD_PLATFORM_CLIENT_SECRET
       callbackURL:  process.env.ENDO_GOOGLE_CLOUD_PLATFORM_GOOGLE_CLOUD_PLATFORM_CALLBACK_URL
-      scope:        ['https://www.googleapis.com/auth/cloud-platform', 'https://www.googleapis.com/auth/userinfo.profile']
+      scope:        ['https://www.googleapis.com/auth/cloud-platform',
+                    'https://www.googleapis.com/auth/userinfo.profile',
+                    'https://www.googleapis.com/auth/devstorage.read_only',
+                    'https://www.googleapis.com/auth/logging.write',
+                    'https://www.googleapis.com/auth/monitoring.write',
+                    'https://www.googleapis.com/auth/servicecontrol',
+                    'https://www.googleapis.com/auth/service.management.readonly',
+                    'https://www.googleapis.com/auth/trace.append']
     }
 
     super options, @onAuthorization
