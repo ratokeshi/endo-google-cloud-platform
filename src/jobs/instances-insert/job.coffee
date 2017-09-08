@@ -26,19 +26,24 @@ class InstancesInsert
   do: ({data}, callback) =>
     return callback @_userError(422, 'data.projectname is required') unless data.projectname?
 
+#   only needed for network creation in an insterted instancename
+    zone = data.zonename
+    zonenetwork = zone
+    zonenetwork = zonenetwork.substr(0, zone?.length - 2)
+
     body = {
-      "name": "instance-401",
-      "machineType": "projects/tokeshi-net-izen/zones/us-central1-f/machineTypes/f1-micro",
+      "name": "#{data.instancename}",
+      "machineType": "projects/tokeshi-net-izen/zones/#{data.zonename}/machineTypes/f1-micro",
       "disks": [
         {
           "type": "PERSISTENT",
           "boot": true,
           "mode": "READ_WRITE",
           "autoDelete": true,
-          "deviceName": "instance-401",
+          "deviceName": "instance-500",
           "initializeParams": {
             "sourceImage": "projects/debian-cloud/global/images/debian-9-stretch-v20170829",
-            "diskType": "projects/tokeshi-net-izen/zones/us-central1-f/diskTypes/pd-standard",
+            "diskType": "projects/tokeshi-net-izen/zones/#{data.zonename}/diskTypes/pd-standard",
             "diskSizeGb": "10"
           }
         }
@@ -46,7 +51,7 @@ class InstancesInsert
       "networkInterfaces": [
         {
           "network": "projects/tokeshi-net-izen/global/networks/default",
-          "subnetwork": "projects/tokeshi-net-izen/regions/us-central1/subnetworks/default",
+          "subnetwork": "projects/tokeshi-net-izen/regions/#{zonenetwork}/subnetworks/default",
           "accessConfigs": [
             {
               "name": "External NAT",
