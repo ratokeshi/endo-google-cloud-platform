@@ -6,7 +6,7 @@ need to create RESTapi call
     Cache-Control: no-cache
     Postman-Token: -token-
 
-format is GET https://www.googleapis.com/compute/v1/projects/-name-of-GCP-project-/zones/-name-of-GCP-zone/instances/instance-1/stop
+format is POST https://www.googleapis.com/compute/v1/projects/-name-of-GCP-project-/zones/-name-of-GCP-zone/instances/instance-1/stop
 
 https://cloud.google.com/compute/docs/reference/latest/instances/stop
 ###
