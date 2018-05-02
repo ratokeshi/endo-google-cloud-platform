@@ -24,6 +24,7 @@ node command.js
 
 ## Update Notes
 2017-09-03 13:13 - Created doc for updating adding jobs added job for instance-get
+
 2017-08-29 19:36 - successful run of the endo-doctor
 
 2017-08-28 20:59 - Update Src\api-strategy.coffee passport-google-oauth20<br>
